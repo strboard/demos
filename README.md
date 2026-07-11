@@ -4,6 +4,8 @@ A mobile-first static gallery for Strboard developer build-task demos. Each vide
 
 The site is intentionally dependency-free and hosted with GitHub Pages.
 
+**Live gallery:** https://jkieley-openclaw.github.io/strboard-demos/
+
 ## Add a demo
 
 1. Copy the optimized MP4 into `videos/`.
