@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07182f" />
+    <meta
+      name="description"
+      content="A mobile-friendly gallery of Strboard product demos with links to the pull requests behind each release."
+    />
+    <title>Strboard Demo Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Strboard demos home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Strboard <strong>Demos</strong></span>
+      </a>
+      <a class="header-link" href="https://github.com/strboard" target="_blank" rel="noreferrer">
+        GitHub
+        <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5.2 3.5h7.3v7.3h-1.4V5.9l-7 7-1-1 7-7H5.2V3.5Z" /></svg>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Build progress, in motion</p>
+          <h1 id="page-title">See what shipped.</h1>
+          <p class="intro">
+            Short walkthroughs of the latest Strboard product work, with the implementation pull requests attached.
+          </p>
+          <div class="stats" aria-label="Gallery totals">
+            <span><strong id="video-count">15</strong> demos</span>
+            <span><strong id="pr-count">32</strong> pull requests</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="orb orb-one"></span>
+          <span class="orb orb-two"></span>
+          <div class="play-disc">
+            <svg viewBox="0 0 40 40"><path d="m15 11 16 9-16 9V11Z" /></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section" aria-labelledby="gallery-title">
+        <div class="gallery-toolbar">
+          <div>
+            <p class="section-kicker">Developer build tasks</p>
+            <h2 id="gallery-title">Demo library</h2>
+          </div>
+          <label class="search-box">
+            <span class="sr-only">Search demos</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" /></svg>
+            <input id="search" type="search" placeholder="Search demos" autocomplete="off" />
+          </label>
+        </div>
+
+        <div id="gallery" class="gallery" aria-live="polite"></div>
+        <p id="empty-state" class="empty-state" hidden>No demos match that search.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Strboard product demos</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
